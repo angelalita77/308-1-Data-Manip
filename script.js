@@ -28,7 +28,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 
 // Check five: All numbers are divisible by 5
 // This is a simple check using modulus and the AND operator.
-const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0;
+const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0 && n3%5 == 0 && n4%5 == 0;
 
 
 
