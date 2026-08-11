@@ -1,6 +1,7 @@
 # ALAB 308.1.1: Data Manipulation with JavaScript
 
 Version 1.0, 10/11/23
+[Click here to open in a separate window.](https://www.canva.com/design/DAFxiNus6dk/N170Fss8bc8VJb6iPbpuxg/edit?utm_content=DAFxiNus6dk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Introduction
 
