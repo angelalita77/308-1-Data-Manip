@@ -30,6 +30,9 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // This is a simple check using modulus and the AND operator.
 const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0 && n3%5 == 0 && n4%5 == 0;
 
+// Check six: Is the first number larger than the last
+// This is a simple comparison check using > or <
+const isFirstLargerThanLast = n1 > n4;
 
 
 // Here, we put the results into a single variable 
@@ -39,6 +42,7 @@ const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0 && n3%5 == 0 && n4%5 == 0;
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique && isDivisibleBy5;
 
 // Finally, log the results.
+console.log (isFirstLargerThanLast)
 console.log (isDivisibleBy5);
 console.log(isValid);
 
