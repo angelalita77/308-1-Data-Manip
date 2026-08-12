@@ -18,7 +18,7 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+const isOver25 = !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25);
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -34,17 +34,28 @@ const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0 && n3%5 == 0 && n4%5 == 0;
 // This is a simple comparison check using > or <
 const isFirstLargerThanLast = n1 > n4;
 
+// Arithmetic Chain Problem
+// Subtract the first number from the second number.
+// Multiply the result by the third number.
+// Find the remainder of dividing the result by the fourth number.
+let answer = [ (n2 - n1) * n3] / n4;
+
+
+// New isOver25
+// Improve isOver without using the NOT (!) logical function
+
 
 // Here, we put the results into a single variable 
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
-const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique && isDivisibleBy5;
+const isValid = isSum50 && isTwoOdd && isOver25 && isUnique && isDivisibleBy5;
 
 // Finally, log the results.
 console.log (isFirstLargerThanLast)
 console.log (isDivisibleBy5);
 console.log(isValid);
+console.log (answer);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
