@@ -57,6 +57,27 @@ console.log (isDivisibleBy5);
 console.log(isValid);
 console.log (answer);
 
+//Part 2: Practical Math
+// Global values
+const totalDistance = 1500;
+let fuelBudget = 175
+let averageFuelCost = 3;
+let mph55Speed = 30;
+let mph60Speed = 28;
+let mph75Speed = 23;
+
+// How many gallons of fuel will you need for the entire trip?
+let gallonsAt55mph = totalDistance / mph55Speed;
+let gallonsAt60mph = totalDistance / mph60Speed;
+let gallonsAt75mph = totalDistance / mph75Speed;
+
+console.log(`The number of gallons of gas used on trip when traffling 55MPH is ${gallonsAt55mph}`);
+console.log("The number of gallons of gas used on trip when traffling 60MPH is " + totalDistance / mph60Speed);
+
+let something = totalDistance + fuelBudget;
+
+
+
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
 // we break things into small, manageable pieces so that
