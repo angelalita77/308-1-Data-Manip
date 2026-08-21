@@ -69,27 +69,27 @@ console.log(`Are ${allNums} over 25? ${String(newIsOver25).toUpperCase()}`)
 const totalDistance = 1500;
 const fuelBudget = 175
 const averageFuelCost = 3;
-const mpgFrom55MPH = 30;
-const mpgFrom60MPH = 28;
-const mpgFrom75MPH = 23;
+const mpgAt55 = 30; //30MPG at 55MPH
+const mpgAt60 = 28; //28MPG at 60MPH
+const mpgAt75 = 23; //23MPG at 75MPH
 
 // How many gallons of fuel will you need for the entire trip?
-let gallonsAt55mph = totalDistance / mpgFrom55MPH;
-let gallonsAt60mph = totalDistance / mpgFrom60MPH;
-let gallonsAt75mph = totalDistance / mpgFrom75MPH;
+let gallonsAt55 = totalDistance / mpgAt55;
+let gallonsAt60 = totalDistance / mpgAt60;
+let gallonsAt75 = totalDistance / mpgAt75;
 
 console.log("\n");
 console.log(`---------Part 2: Practical Math --------------- `);
-console.log(`The number of gallons of gas used on trip when traveling 55MPH is ${gallonsAt55mph} gallons.`);
-console.log(`The number of gallons of gas used on trip when traveling 60MPH is ${gallonsAt60mph} gallons.`);
-console.log(`The number of gallons of gas used on trip when traveling 75MPH is ${gallonsAt75mph} gallons.`);
+console.log(`The number of gallons of gas used on trip when traveling 55MPH is ${gallonsAt55} gallons.`);
+console.log(`The number of gallons of gas used on trip when traveling 60MPH is ${gallonsAt60} gallons.`);
+console.log(`The number of gallons of gas used on trip when traveling 75MPH is ${gallonsAt75} gallons.`);
 
 
 
 //Will your budget be enough to cover the fuel expense?
-let fuelCostA = averageFuelCost * gallonsAt55mph;
-let fuelCostB = averageFuelCost * gallonsAt60mph;
-let fuelCostC = averageFuelCost * gallonsAt75mph;
+let fuelCostA = averageFuelCost * gallonsAt55;
+let fuelCostB = averageFuelCost * gallonsAt60;
+let fuelCostC = averageFuelCost * gallonsAt75;
 
 console.log(`The only travel that my budget will not cover is the fuel expense \
 of ${fuelCostC.toFixed(2)} if traveling at 75PMH`);
