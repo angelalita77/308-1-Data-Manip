@@ -94,9 +94,6 @@ let fuelCostC = averageFuelCost * gallonsAt75mph;
 console.log(`The only travel that my budget will not cover is the fuel expense \
 of ${fuelCostC.toFixed(2)} if traveling at 75PMH`);
 
-fuelCostB;
-fuelCostC;
-
 // How long will the trip take, in hours?
 let tripATime = totalDistance/55;
 let tripBTime = totalDistance/60;
