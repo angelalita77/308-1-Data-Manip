@@ -57,11 +57,12 @@ const isValid = isSum50 && isTwoOdd && isOver25 && isUnique && isDivisibleBy5;
 // Finally, log the results.
 let allNums = `${n1}, ${n2}, ${n3}, and ${n4}`;
 
+console.log("\n");
+console.log(`---------Part 1: Math Problems --------------- `)
 console.log (`Are numbers ${allNums} divisible by 5? ${String(isDivisibleBy5).toUpperCase()}`)
 console.log (`Is the first number in ${allNums} larger than the last? ${String(isFirstLargerThanLast).toUpperCase()}`);
 console.log (`The following calculation is [ (${n2} - ${n1}) * ${n3} ] / ${n4} = ${answer}`)
-console.log(isValid);
-console.log (answer);
+
 
 //Part 2: Practical Math
 // Global values
@@ -77,7 +78,8 @@ let gallonsAt55mph = totalDistance / mpgFrom55MPH;
 let gallonsAt60mph = totalDistance / mpgFrom60MPH;
 let gallonsAt75mph = totalDistance / mpgFrom75MPH;
 
-
+console.log("\n");
+console.log(`---------Part 2: Practical Math --------------- `);
 console.log(`The number of gallons of gas used on trip when traveling 55MPH is ${gallonsAt55mph} gallons.`);
 console.log(`The number of gallons of gas used on trip when traveling 60MPH is ${gallonsAt60mph} gallons.`);
 console.log(`The number of gallons of gas used on trip when traveling 75MPH is ${gallonsAt75mph} gallons.`);
@@ -100,13 +102,18 @@ let tripATime = totalDistance/55;
 let tripBTime = totalDistance/60;
 let tripCTime = totalDistance/75;
 
-tripATime;
-tripBTime;
-tripCTime;
+console.log(`The trip will take about ${Math.round(tripATime)} hours if you go 55MPH`)
+console.log(`The trip will take about ${Math.round(tripBTime)} hours if you go 60MPH`)
+console.log(`The trip will take about ${Math.round(tripCTime)} hours if you go 75MPH`)
+
 
 // Compare the results when traveling at an average 
 // of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
-
+console.log("\n");
+console.log(`Compare the results when traveling at an average \
+of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?`);
+console.log(`The best method to travel is to travel at 60MPH.
+Your fuel budget will be under $${fuelBudget} and you will get there faster than going 55MPH.`)
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
