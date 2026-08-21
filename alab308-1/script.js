@@ -29,7 +29,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // ----------- Start of Part 1 Assignmnet ---------------------
 // Check five: All numbers are divisible by 5
 // This is a simple check using modulus and the AND operator.
-const isDivisibleBy5 = n1%5 == 0 && n2%5 == 0 && n3%5 == 0 && n4%5 == 0;
+const isDivisibleBy5 = n1%5 === 0 && n2%5 === 0 && n3%5 === 0 && n4%5 === 0;
 
 // Check six: Is the first number larger than the last
 // This is a simple comparison check using > or <
@@ -39,7 +39,7 @@ const isFirstLargerThanLast = n1 > n4;
 // Subtract the first number from the second number.
 // Multiply the result by the third number.
 // Find the remainder of dividing the result by the fourth number.
-let answer = [ (n2 - n1) * n3] / n4;
+let answer = ( (n2 - n1) * n3 ) / n4;
 
 
 // New isOver25
@@ -62,7 +62,7 @@ console.log(`---------Part 1: Math Problems --------------- `)
 console.log (`Are numbers ${allNums} divisible by 5? ${String(isDivisibleBy5).toUpperCase()}`)
 console.log (`Is the first number in ${allNums} larger than the last? ${String(isFirstLargerThanLast).toUpperCase()}`);
 console.log (`The following calculation is [ (${n2} - ${n1}) * ${n3} ] / ${n4} = ${answer}`)
-
+console.log(`Are ${allNums} over 25? ${String(newIsOver25).toUpperCase()}`)
 
 //Part 2: Practical Math
 // Global values
