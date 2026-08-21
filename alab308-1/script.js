@@ -67,11 +67,11 @@ console.log(`Are ${allNums} over 25? ${String(newIsOver25).toUpperCase()}`)
 //Part 2: Practical Math
 // Global values
 const totalDistance = 1500;
-let fuelBudget = 175
-let averageFuelCost = 3;
-let mpgFrom55MPH = 30;
-let mpgFrom60MPH = 28;
-let mpgFrom75MPH = 23;
+const fuelBudget = 175
+const averageFuelCost = 3;
+const mpgFrom55MPH = 30;
+const mpgFrom60MPH = 28;
+const mpgFrom75MPH = 23;
 
 // How many gallons of fuel will you need for the entire trip?
 let gallonsAt55mph = totalDistance / mpgFrom55MPH;
